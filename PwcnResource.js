@@ -169,7 +169,7 @@ PwcnResource.prototype = {
 
     var apiVersion = this._pwcn.getApiField('version');
     var headers = {
-      'Authorization': 'Bearer ' + auth,
+      'Authorization': 'Bearer ' + this._pwcn._api.auth,
       'Accept': 'application/json',
       'Content-Type': contentType + '; charset=UTF-8',
       'User-Agent': 'Pwcn/v1 NodeBindings/'

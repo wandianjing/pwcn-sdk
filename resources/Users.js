@@ -5,7 +5,7 @@ var pwcnMethod = PwcnResource.method;
 
 module.exports = PwcnResource.extend({
 
-  path: 'apps/{appId}/users',
+  path: 'users',
 
   create: pwcnMethod({
     method: 'POST',
@@ -27,6 +27,6 @@ module.exports = PwcnResource.extend({
     method: 'PUT',
     path: '/{userId}',
     urlParams: ['appId', 'userId']
-  }),
+  })
 
 });
